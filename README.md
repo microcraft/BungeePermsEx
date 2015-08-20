@@ -1,8 +1,8 @@
-# BungeePerms
+# BungeePermsEx
 a permissions plugin for BungeeCord
 
-BungeePerms is a permissions plugin for BungeeCord and Spigot. It overrides the built-in permissions systems
-so you don't need BungeeCord/Spigot permissions (anymore). BungeePerms can form a network so that it's a single
+BungeePermsEx is a permissions plugin for BungeeCord and Spigot. It overrides the built-in permissions systems
+so you don't need BungeeCord/Spigot permissions (anymore). BungeePermsEx can form a network so that it's a single
 system managing all permissions in your network.
 
 **Functionality:**
@@ -26,86 +26,86 @@ system managing all permissions in your network.
 
 **Permissions:**
 
-`bungeeperms.help` - help command  
-`bungeeperms.reload` - reload command  
-`bungeeperms.users` - for listing defined users  
-`bungeeperms.user.info` - for showing info of a user  
-`bungeeperms.user.delete` - for deleting a user  
-`bungeeperms.user.perms.add` - for adding permissions to a user  
-`bungeeperms.user.perms.remove` - for removing permissions from a user  
-`bungeeperms.user.perms.has` - for checking permissions of a user  
-`bungeeperms.user.perms.list` - for listing the permissions of a user  
-`bungeeperms.user.group.add` - for adding a group to a user  
-`bungeeperms.user.group.remove` - for removing a group from a user  
-`bungeeperms.user.group.set` - for setting a group as the main group of a user  
-`bungeeperms.user.groups` - for listing a user's groups  
-`bungeeperms.groups` - for listing defined groups  
-`bungeeperms.group.info` - for showing info of a group  
-`bungeeperms.group.create` - for creating a group  
-`bungeeperms.group.delete` - for deleting a group  
-`bungeeperms.group.inheritances.add` - for adding an inheritance to a group  
-`bungeeperms.group.inheritances.remove` - for removing an inheritance of a group  
-`bungeeperms.group.rank` - for setting the rank to a group  
-`bungeeperms.group.default` - for determining whether the group is a default group  
-`bungeeperms.group.display` - for setting a display name to a group  
-`bungeeperms.group.prefix` - for setting a prefix to a group  
-`bungeeperms.group.suffix` - for setting a suffix to a group  
-`bungeeperms.group.perms.add` - for adding permissions to a group  
-`bungeeperms.group.perms.remove` - for removeing permissions from a user  
-`bungeeperms.group.perms.has` - for checking permissions of a user  
-`bungeeperms.group.perms.list` - for listing permissions of a user  
-`bungeeperms.promote` - for promoting a user  
-`bungeeperms.demote` - for demoting a user  
-`bungeeperms.cleanup` - for cleanup  
-`bungeeperms.format` - for formatting  
-`bungeeperms.backend` - for showing the currently used backend or changing it  
-`bungeeperms.migrate` - for migrating backend, uuid use and uuid-player database  
-`bungeeperms.uuid` - for uuid command  
+`bungeepermsex.help` - help command  
+`bungeepermsex.reload` - reload command  
+`bungeepermsex.users` - for listing defined users  
+`bungeepermsex.user.info` - for showing info of a user  
+`bungeepermsex.user.delete` - for deleting a user  
+`bungeepermsex.user.perms.add` - for adding permissions to a user  
+`bungeepermsex.user.perms.remove` - for removing permissions from a user  
+`bungeepermsex.user.perms.has` - for checking permissions of a user  
+`bungeepermsex.user.perms.list` - for listing the permissions of a user  
+`bungeepermsex.user.group.add` - for adding a group to a user  
+`bungeepermsex.user.group.remove` - for removing a group from a user  
+`bungeepermsex.user.group.set` - for setting a group as the main group of a user  
+`bungeepermsex.user.groups` - for listing a user's groups  
+`bungeepermsex.groups` - for listing defined groups  
+`bungeepermsex.group.info` - for showing info of a group  
+`bungeepermsex.group.create` - for creating a group  
+`bungeepermsex.group.delete` - for deleting a group  
+`bungeepermsex.group.inheritances.add` - for adding an inheritance to a group  
+`bungeepermsex.group.inheritances.remove` - for removing an inheritance of a group  
+`bungeepermsex.group.rank` - for setting the rank to a group  
+`bungeepermsex.group.default` - for determining whether the group is a default group  
+`bungeepermsex.group.display` - for setting a display name to a group  
+`bungeepermsex.group.prefix` - for setting a prefix to a group  
+`bungeepermsex.group.suffix` - for setting a suffix to a group  
+`bungeepermsex.group.perms.add` - for adding permissions to a group  
+`bungeepermsex.group.perms.remove` - for removeing permissions from a user  
+`bungeepermsex.group.perms.has` - for checking permissions of a user  
+`bungeepermsex.group.perms.list` - for listing permissions of a user  
+`bungeepermsex.promote` - for promoting a user  
+`bungeepermsex.demote` - for demoting a user  
+`bungeepermsex.cleanup` - for cleanup  
+`bungeepermsex.format` - for formatting  
+`bungeepermsex.backend` - for showing the currently used backend or changing it  
+`bungeepermsex.migrate` - for migrating backend, uuid use and uuid-player database  
+`bungeepermsex.uuid` - for uuid command  
 
 
 
 
 **Commands:**
 
-`/bungeeperms` - Welcomes you to BungeePerms  
-`/bungeeperms help` - Shows the help  
-`/bungeeperms reload` - Reloads the permissions  
-`/bungeeperms users` - Lists the users (add '-c' for counting)  
-`/bungeeperms user <username/uuid> add <permission> [server] [world]` - adds a permission to the given user  
-`/bungeeperms user <username/uuid> remove <permission> [server] [world]` - remove a permission from the given user  
-`/bungeeperms user <username/uuid> has <permission> [server] [world]` - checks if the given user has the given permission  
-`/bungeeperms user <username/uuid> list` - lists the permissions of the given user  
-`/bungeeperms user <username/uuid> groups` - lists the groups the given user is in  
-`/bungeeperms user <username/uuid> info` - shows group, .. info  
-`/bungeeperms user <username/uuid> delete` - deletes a user  
-`/bungeeperms user <username/uuid> addgroup <groupname>` - add a group to a user  
-`/bungeeperms user <username/uuid> removegroup <groupname>` - remove a group from a user  
-`/bungeeperms user <username/uuid> setgroup <groupname>` - sets the main group for a user  
+`/bpex` - Welcomes you to BungeePermsEx  
+`/bpex help` - Shows the help  
+`/bpex reload` - Reloads the permissions  
+`/bpex users` - Lists the users (add '-c' for counting)  
+`/bpex user <username/uuid> add <permission> [server] [world]` - adds a permission to the given user  
+`/bpex user <username/uuid> remove <permission> [server] [world]` - remove a permission from the given user  
+`/bpex user <username/uuid> has <permission> [server] [world]` - checks if the given user has the given permission  
+`/bpex user <username/uuid> list` - lists the permissions of the given user  
+`/bpex user <username/uuid> groups` - lists the groups the given user is in  
+`/bpex user <username/uuid> info` - shows group, .. info  
+`/bpex user <username/uuid> delete` - deletes a user  
+`/bpex user <username/uuid> addgroup <groupname>` - add a group to a user  
+`/bpex user <username/uuid> removegroup <groupname>` - remove a group from a user  
+`/bpex user <username/uuid> setgroup <groupname>` - sets the main group for a user  
 
-`/bungeeperms groups` - Lists the groups  
-`/bungeeperms group <groupname> add <permission> [server] [world]` - adds a permission to the given group  
-`/bungeeperms group <groupname> remove <permission> [server] [world]` - remove a permission from the given group  
-`/bungeeperms group <groupname> has <permission> [server] [world]` - checks if the given groupname has the given permission  
-`/bungeeperms group <groupname> list` - lists the permissions of the given group  
-`/bungeeperms group <groupname> info` - shows info to a group  
-`/bungeeperms group <groupname> create` - creates a new group  
-`/bungeeperms group <groupname> delete` - deletes a group  
-`/bungeeperms group <groupname> addinherit <group>` - adds an inheritance to a group  
-`/bungeeperms group <groupname> removeinherit <group>` - removes an inheritance from a group  
-`/bungeeperms group <groupname> rank <new rank>` - sets the rank for a group  
-`/bungeeperms group <groupname> ladder <new ladder>` - sets the ladderfor a group  
-`/bungeeperms group <groupname> default <true|false>` - determines whether the group is default  
-`/bungeeperms group <groupname> display <displayname>` - set the displayname for the group  
-`/bungeeperms group <groupname> prefix <prefix>` - sets the prefix for the group  
-`/bungeeperms group <groupname> suffix <suffix>` - sets the suffix for the group  
+`/bpex groups` - Lists the groups  
+`/bpex group <groupname> add <permission> [server] [world]` - adds a permission to the given group  
+`/bpex group <groupname> remove <permission> [server] [world]` - remove a permission from the given group  
+`/bpex group <groupname> has <permission> [server] [world]` - checks if the given groupname has the given permission  
+`/bpex group <groupname> list` - lists the permissions of the given group  
+`/bpex group <groupname> info` - shows info to a group  
+`/bpex group <groupname> create` - creates a new group  
+`/bpex group <groupname> delete` - deletes a group  
+`/bpex group <groupname> addinherit <group>` - adds an inheritance to a group  
+`/bpex group <groupname> removeinherit <group>` - removes an inheritance from a group  
+`/bpex group <groupname> rank <new rank>` - sets the rank for a group  
+`/bpex group <groupname> ladder <new ladder>` - sets the ladderfor a group  
+`/bpex group <groupname> default <true|false>` - determines whether the group is default  
+`/bpex group <groupname> display <displayname>` - set the displayname for the group  
+`/bpex group <groupname> prefix <prefix>` - sets the prefix for the group  
+`/bpex group <groupname> suffix <suffix>` - sets the suffix for the group  
 
-`/bungeeperms promote <username/uuid> [ladder]` - promotes the given user to the next rank [in the give ladder]  
-`/bungeeperms demote <username/uuid> [ladder]` - demotes the given user to the previous rank [in the give ladder]  
-`/bungeeperms format` - Reformates the permission.yml or mysql table - BE CAREFUL  
-`/bungeeperms cleanup` - Cleans up the permission.yml or mysql table - !BE VERY CAREFUL! - removes a lot of players from the permissions.yml if configured  
-`/bungeeperms migrate backend [yaml|mysql|mysql2]` - Shows the used permissions database (file or mysql table) [or migrates to the given database] - BungeePerms needs a mysql account on your server and general table permissions  
-`/bungeeperms migrate useuuid [true|false]` - Shows whether uuids are used for player identification [or migrates the database]  
-`/bungeeperms migrate uuidplayerdb [none|yaml|mysql]` - Shows the used uuid-player database (none, file or mysql table) [or migrates to the given database]  
+`/bpex promote <username/uuid> [ladder]` - promotes the given user to the next rank [in the give ladder]  
+`/bpex demote <username/uuid> [ladder]` - demotes the given user to the previous rank [in the give ladder]  
+`/bpex format` - Reformates the permission.yml or mysql table - BE CAREFUL  
+`/bpex cleanup` - Cleans up the permission.yml or mysql table - !BE VERY CAREFUL! - removes a lot of players from the permissions.yml if configured  
+`/bpex migrate backend [yaml|mysql]` - Shows the used permissions database (file or mysql table) [or migrates to the given database] - BungeePermsEx needs a mysql account on your server and general table permissions  
+`/bpex migrate useuuid [true|false]` - Shows whether uuids are used for player identification [or migrates the database]  
+`/bpex migrate uuidplayerdb [none|yaml|mysql]` - Shows the used uuid-player database (none, file or mysql table) [or migrates to the given database]  
 
 
 
